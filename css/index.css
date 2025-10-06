@@ -1,0 +1,76 @@
+/* estilos generales */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* portada */
+.portada {
+    background: #0077B6;
+    background: linear-gradient(90deg, rgba(0, 119, 182, 1) 0%, rgba(87, 199, 133, 1) 79%, rgba(0, 180, 216, 1) 100%);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 100px 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+
+}
+
+.portada h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-decoration: underline;
+}
+
+.portada p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+/* contenido */
+.contenido {
+    max-width: 800px;
+    margin: 80px auto;
+    background: rgb(194, 225, 232);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.contenido h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0077b6;
+}
+
+/* menu */
+.contenido ul {
+    list-style: none;
+    padding: 10px 0;
+}
+
+.contenido ul li {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.contenido ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #0077b6;
+    background: #e0f7fa;
+    padding: 7px 20px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+
+}
+
+.contenido ul li a:hover {
+    background: #0077b6;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
