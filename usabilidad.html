@@ -5,14 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¿Qué Usabilidad?</title>
 </head>
-<body>
+<>
     <div class="titulo">
         <h1>Usabilidad web y diseño centrado en el usuario (DCU)</h1>
     </div>
+    <nav aria-label="Índice de contenidos">
+        <h2>Índice de contenidos</h2>
+        <ul>
+            <li><a href="#que-es-usabilidad">¿Qué es usabilidad?</a></li>
+            <li><a href="#principios">Principios de Nielsen</a></li>
+            <li><a href="#dcu">Diseño Centrado en el Usuario</a></li>
+            <li><a href="#referencias">Referencias</a></li>
+        </ul>
+</nav>
+
     <div class="contenido">
-        <div class="que-es-usabilidad">
+        <div id="que-es-usabilidad">
+        <img src="./images/usability.webp" alt="usabilidad web" width="500px" height="300px">
         <p>
-            <img src="./images/usability.webp" alt="usabilidad web" width="500px" height="300px">
         La <strong>usabilidad web</strong> se refiere a lo fácil que resulta para los usuarios
         navegar por un sitio y realizar las acciones que necesitan sin complicaciones ni frustraciones.
         Este concepto incluye una <strong>navegación sencilla</strong>, un <strong>diseño centrado en el usuario</strong>,
@@ -35,50 +45,40 @@
         de que realicen acciones importantes, como <strong>comprar un producto</strong>, 
         <strong>llenar un formulario</strong> o <strong>suscribirse a un boletín</strong>.
     </p>
-
     <h2>Beneficios</h2>
-
         <p>
         Una buena usabilidad web aporta múltiples ventajas tanto para los usuarios como para los propietarios del sitio.
         Algunos de los beneficios más destacados son:
         </p>
-
-    <ul>
-    <li>
-        <strong>Mejora la experiencia del usuario:</strong>
-    </li>
-    <img src="./images/ux.webp" alt="Mejora la experiencia del usuario" width="500px" height="300px">
-    <p>Un sitio usable ofrece una experiencia positiva y satisfactoria, lo que genera confianza en la marca 
-    y fomenta la fidelidad de los visitantes.</p>
-
-    <li>
-        <strong>Aumenta la tasa de conversión:</strong>
-    </li>
-    <img src="./images/conversionRate.webp" alt="Aumenta la tasa de conversión" width="500px" height="300px">
-    <p>
-        Cuando los usuarios encuentran fácilmente lo que buscan y pueden completar sus acciones sin dificultades, 
-        es más probable que realicen una compra, se suscriban o se pongan en contacto.
-    </p>
-    <li>
-        <strong>Mejora el posicionamiento en los motores de búsqueda:</strong>
-    </li>
-    <img src="./images/position.webp" alt="Mejora el posicionamiento en los motores de búsqueda" width="500px" height="300px">
-    <p>
-        Los buscadores valoran la usabilidad como un factor importante para determinar la calidad y relevancia 
-        de un sitio web. Un diseño claro y funcional ayuda a lograr mejores posiciones en las <abbr title="Search Engine Results Pages">SERP</abbr>.
-    </p>
-    <li>
-        <strong>Reduce los costos de atención al cliente:</strong>
-    </li>
-    <img src="./images/customerService.webp" alt="Reduce los costos de atención al cliente" width="500px" height="300px">
-    <p> 
-        Un sitio fácil de usar disminuye la necesidad de soporte, ya que los usuarios pueden encontrar por sí mismos 
-        la información que necesitan.
-    </p>
-    </ul>
-    <div class="principios-usabilidad">
+        <ul>
+            <li>
+                <h3>Mejora la experiencia del usuario</h3>
+                <img src="./images/ux.webp" alt="Mejora la experiencia del usuario" loading="lazy">
+                <p>Un sitio usable ofrece una experiencia positiva y satisfactoria, lo que genera confianza en la marca y fomenta la fidelidad.</p>
+            </li>
+            <li>
+                <h3>Aumenta la tasa de conversión</h3>
+                <img src="./images/conversionRate.webp" alt="Aumenta la tasa de conversión" loading="lazy">
+                <p>Si encuentran lo que buscan y completan tareas sin fricción, es más probable que compren, se suscriban o contacten.</p>
+            </li>
+            <li>
+                <h3>Mejora el posicionamiento</h3>
+                <img src="./images/position.webp" alt="Mejora el posicionamiento en buscadores" loading="lazy">
+                <p>La usabilidad es un indicador de calidad; un diseño claro ayuda a posicionar mejor en las <abbr title="Search Engine Results Pages">SERP</abbr>.</p>
+            </li>
+            <li>
+                <h3>Reduce costos de soporte</h3>
+                <img src="./images/customerService.webp" alt="Reduce los costos de atención al cliente" loading="lazy">
+                <p>Un sitio claro reduce dudas y la necesidad de asistencia.</p>
+            </li>
+        </ul>
+    </div>
+            <div id="principios" class="principios-nielsen">
         <h2>Principios de Usabilidad de Jakob Nielsen</h2>
-        <img src="./images/usabilidad-jakob-nielsen.webp" alt="10 Principios de Usabilidad" width="700px" height="400px">
+        <div class="images" style="display: flex;gap: 80px; justify-content: center;">
+            <img src="./images/jakob-nielsen.webp" alt="Jakob Nielsen" width="300px" height="400px">
+            <img src="./images/usabilidad-jakob-nielsen.webp" alt="10 Principios de Usabilidad" width="700px" height="400px">
+        </div>
         <p>
             <a href="https://es.wikipedia.org/wiki/Jakob_Nielsen">Jakob Nielsen</a>, una de las personas más respetadas en el campo de la usabilidad web, propuso diez principios fundamentales para diseñar interfaces 
             que sean fáciles de usar y comprender. Estos principios son ampliamente reconocidos y aplicados en el campo del diseño web:
@@ -121,6 +121,9 @@
             <br>
             <img src="./images/control-usuario-mal.jpeg" alt="mala Practica Control del Usuario y Libertad" width="500px" height="500px">
             <li><strong>Consistencia y estándares</strong></li>
+            <p class="justificacion">
+                Para garantizar <strong>Consistencia y Estándares</strong>, unifiqué la jerarquía de títulos (un solo <code>h1</code> y uso consistente de <code>h2</code>/<code>h3</code>), normalicé la redacción de los rótulos y seguí convenciones comunes (el logo y los enlaces funcionan de forma predecible). Además, consolidé estilos en clases reutilizables y mantuve terminología a lo largo de la página, reduciendo la carga cognitiva y facilitando el reconocimiento de patrones por parte del usuario.
+            </p>
             <p style="text-decoration: underline;">Los usuarios no deben verse obligados si diferentes palabras, situaciones o acciones significan lo mismo. Se debe seguir las convenciones establecidas en la plataforma y la industria.</p>
             <p>Esto se puede lograr mediante el uso de terminología y símbolos consistentes en toda la interfaz de usuario.</p>
             <img src="./images/check-icon.png" alt="check-icon" width="20px" height="20px" style="vertical-align: middle;">
@@ -157,6 +160,8 @@
             <br>
             <img src="./images/reconocimiento-mal.jpg" alt="mala Practica Visibilidad del Reconocimiento en lugar de Recuerdo" width="500px" height="300px">
             <li><strong>Flexibilidad y eficiencia de uso</strong></li>
+            <p class="justificacion">
+            Para mejorar la <strong>Flexibilidad y Eficiencia de Uso</strong>, incorporé un índice con anclas que permite saltar a cada sección en un clic.</p>
             <p style="text-decoration: underline;">Los usuarios más experimentados, deben poseer atajos y aceleradores para poder realizar sus operaciones mas habituales. De esta forma, tiene alternativas para personalizar sus acciones frecuentes.</p>
             <p>Esto se puede lograr mediante la implementación de atajos de teclado, menús contextuales y opciones de personalización en la interfaz.</p>
             <img src="./images/check-icon.png" alt="check-icon" width="20px" height="20px" style="vertical-align: middle;">
@@ -169,6 +174,9 @@
             <br>
             <img src="./images/atajos-teclado-lock.webp" alt="mala Practica Flexibilidad y Eficiencia de Uso" width="500px" height="300px">
             <li><strong>Estética y diseño minimalista</strong></li>
+            <p class="justificacion">
+            Apliqué <strong>Estética y Diseño Minimalista</strong> priorizando el contenido relevante, eliminando elementos decorativos redundantes y definiendo una paleta cromática breve junto con una jerarquía tipográfica clara. Organicé la información en bloques breves y listas, añadí espacio en blanco y evité subrayados decorativos, mejorando la legibilidad y el foco en lo esencial para disminuir la carga durante la lectura.
+            </p>
             <p style="text-decoration: underline;">Las interfaces no deben contener información irrelevante o que rara vez se necesite. Se debe conocer que tipo de contenido necesita el usuario.</p>
             <p>Esto se puede lograr mediante la eliminación de elementos innecesarios, el uso de un diseño limpio y la organización lógica de la información.</p>
             <img src="./images/check-icon.png" alt="check-icon" width="20px" height="20px" style="vertical-align: middle;">
@@ -207,8 +215,9 @@
         </ol>
     </div>
     </div>
-    <div class="DCU">
-        <h1 class="title">Diseño Centrado en el Usuario</h1>
+    </div>
+    <div id="dcu">
+        <h2 class="title">Diseño Centrado en el Usuario</h2>
         <div class="que-es-dcu">
             <p>
                 El <strong>diseño centrado en el usuario</strong> (DCU) conocido como
@@ -306,7 +315,7 @@
         </div>
     </div>
     </div>
-    <footer class="referencias">
+    <footer id="referencias">
     <h3>Referencias</h3>
         <h4>Usabilidad Web</h4>
     <ul>
