@@ -46,22 +46,34 @@
     }
     </script>
 </head>
-<link rel="stylesheet" href="./css/seo.css" />
-</head>
 
 <body>
     <div class="titulo">
         <img src="./images/SEO.jpg" alt="SEO Icon" width="50" height="50">
         <h1>SEO (Search Engine Optimization)</h1>
     </div>
+    <nav aria-label="Índice de contenidos">
+            <h2>Índice de contenidos</h2>
+            <ul>
+                <li><a href="/index.html" aria-current="page">Menú Principal</a></li>
+                <li><a href="#que-es-seo">¿Qué es SEO?</a></li>
+                <li><a href="#importancia">Importancia del SEO</a></li>
+                <li><a href="#velocidadDeCarga">Velocidad de Carga y SEO</a></li>
+                <li><a href="#SEOTecnico">SEO Técnico</a></li>
+                <li><a href="#OpenGraph">Etiquetas Open Graph</a></li>
+                <li><a href="#TwitterCard">Twitter Cards</a></li>
+                <li><a href="#referencias">Referencias</a></li>
+            </ul>
+    </nav>
+
     <div class="contenido">
-        <div class="queEs">
+        <div id="que-es-seo">
         <h2>¿Qué es?</h2>
         <p>El término <strong>SEO</strong> hace referencia a un conjunto de procesos técnicos los cuales tienen como meta principal <strong>optimizar los motores de búsqueda</strong> como Google para mejorar la presencia de un sitio web en los resultados.</p>
         <p>Su principal finalidad es incrementar el <strong>tráfico orgánico</strong> hacia el sitio web, es decir, las visitas que llegan de manera natural sin necesidad de pagar publicidad.</p>
         <p>El SEO busca en escencia <strong>responder de la mejor manera a las consultas de los usuarios</strong>, lo cual implica crear contenidos útiles y relevantes que satisfagan las necesidades de información de los usuarios.</p>
         </div>
-        <div class="Importancia">
+        <div id="importancia">
         <h2>Importancia del SEO</h2>
         <p>A toda hora, sin importar el día, los usuarios de distintos motores de búsqueda realizan consultas para encontrar información, productos o servicios.</p>
         <p>Para lograr tener un sitio web reconocido por los usuarios, es necesario aparecer en los primeros resultados de las búsquedas.</p>
@@ -90,9 +102,9 @@
         y el crecimiento sostenido de cualquier proyecto web.
         </p>
         </div>
-        <div class="velocidadDeCarga">
-            <img src="./images/velocidadDeCarga.webp" alt="velocidad de carga" width="500px" height="500px">
+        <div id="velocidadDeCarga">
         <h2>Velocidad de Carga y SEO</h2>
+                <img src="./images/velocidadDeCarga.webp" alt="velocidad de carga" width="500px" height="500px">
             <p>Este es uno de los <strong>factores más puros</strong> del SEO, ya que abordar los tiempos de carga mejora la clasificación del sitio, aumentando vistas y recoconocimiento del sitio web</p>
             <p>Un sitio web que carga rápidamente no solo mejora la experiencia del usuario, sino que también es favorecido por los motores de búsqueda como Google. La velocidad de carga es un factor crucial en el algoritmo de clasificación, ya que los usuarios tienden a abandonar sitios que tardan mucho tiempo en cargar.</p>
             <p>Existen múltiples maneras de optimizar la velocidad de carga de un sitio web, dentro de algunas de estas maneras están las siguientes:</p>
@@ -109,7 +121,7 @@
         </div>
         <br>
         <br>
-        <div class="SEOTecnico">
+        <div id="SEOTecnico">
         <h2>SEO Técnico</h2>
             <p>El <strong>SEO Técnico</strong> se refiere al proceso de optimizar la configuración de un sitio web para que los buscadores puedan rastrear, indexar y mostrar el contenido del mismo. Por esta razón el SEO técnico se considera <strong>un pilar fundamental</strong> del posicionamiento en buscadores.</p>
             <p>Se le dice "técnico" porque no se relaciona con el contenido del sitio web ni lo que promueve, sino con las configuraciones técnicas como por ejemplo el estado HTTP, la estructura de URL, el uso de etiquetas meta y otros elementos que facilitan el trabajo de los motores de búsqueda.</p>
@@ -172,7 +184,7 @@
             </ul>
         </div>
         <br>
-        <div class="OpenGraphTwitterCard">
+        <div id="OpenGraph">
         <h2>Etiquetas Open Graph</h2>
         <img src="./images/OpenGraph.webp" alt="open graph">
             <p>En 2010, <strong>Facebook</strong> presentó las <strong>metaetiquetas Open Graph</strong> con el objetivo de facilitar la forma en que las páginas web se comparten dentro de su plataforma. Con el tiempo, otras redes sociales como <strong>Twitter</strong> y <strong>LinkedIn</strong> también adoptaron este sistema para mejorar la experiencia del usuario al compartir enlaces.</p>
@@ -191,6 +203,8 @@
             <p>Y este es el aspecto de un enlace con protocolo Open Graph en Facebook:</p>
             <img src="./images/withOpenGraph.webp" alt="con open graph" width="600px" height="400px">
             <p>Como se puede observar, la vista previa del enlace con Open Graph es mucho más atractiva y completa, lo que puede aumentar significativamente la probabilidad de que los usuarios hagan clic en él.</p>
+            </div>
+            <div id="TwitterCard">
             <h2>Twitter Cards</h2>
             <img src="./images/TwitterCards.jpg" alt="twitter cards">
             <p>
@@ -224,7 +238,7 @@
             </ul>
         </div>
 </div>
-<footer class="referencias">
+<footer id="referencias">
     <h3>Referencias</h3>
         <h4>SEO: Descripción General e Importancia</h4>
     <ul>

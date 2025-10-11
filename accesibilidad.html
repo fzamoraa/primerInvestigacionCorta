@@ -12,27 +12,114 @@
     <nav aria-label="Índice de contenidos">
         <h2>Índice de contenidos</h2>
         <ul>
+            <li><a href="/index.html" aria-current="page">Menú Principal</a></li>
             <li><a href="#que-es-accesibilidad">¿Qué es la accesibilidad web?</a></li>
-            <li><a href="#importancia">Importancia de la accesibilidad web</a></li>
-            <li><a href="#beneficios">Beneficios de la accesibilidad web</a></li>
+            <li><a href="#importancia-de-la-accesibilidad-web">Importancia de la accesibilidad web</a></li>
+            <li><a href="#beneficios-accesibilidad">Beneficios de la accesibilidad web</a></li>
+            <li><a href="#principios-wcag">Principios de las Pautas de Accesibilidad para el Contenido Web (WCAG)</a></li>
             <li><a href="#referencias">Referencias</a></li>
         </ul>
     </nav>
-
+    aria
     <div class="contenido">
         <div id="que-es-accesibilidad">
-            <img src="./images/accesibilidad.webp" alt="accesibilidad web" width="500px" height="300px">
+            <img src="./images/accesibilidad-web.webp" alt="accesibilidad web" width="500px" height="300px">
             <p>
                 La <strong>accesibilidad web</strong> se refiere a la práctica de diseñar sitios web que sean utilizables por todas las personas, incluidas aquellas con discapacidades. Esto implica crear contenido que sea fácil de ver, escuchar y navegar, independientemente de las habilidades o limitaciones del usuario.
             </p>
+            <p>La <strong>accesibilidad web</strong> es un aspecto fundamental del diseño inclusivo y debe ser considerada en todas las etapas del desarrollo web. Con una plataforma web accesible, las personas pueden:</p>
+            <ul>
+                <li>Leer y comprender el contenido.</li>
+                <li>Navegar por el sitio web de manera eficiente.</li>
+                <li>Interactuar con formularios y otros elementos interactivos.</li>
+                <li>Acceder a multimedia, como videos y audios, con subtítulos o descripciones.</li>
+                <li>Contribuir con contenido, como comentarios o reseñas dentro del mundo digital.</li>
+            </ul>
+            <p>La Accesibilidad web abarca todas las discapacidades que afectan al acceso a la Web, incluyendo:</p>
+            <ul>
+                <li>Discapacidades visuales (como ceguera, baja visión y daltonismo).</li>
+                <li>Discapacidades auditivas (como sordera y dificultades auditivas).</li>
+                <li>Discapacidades motoras (como dificultades para usar un ratón o teclado).</li>
+                <li>Discapacidades cognitivas (como dificultades de aprendizaje y problemas de memoria).</li>
+                <li>Discapacidades físicas (como lesiones o condiciones que afectan la movilidad).</li>
+            </ul>
         </div>
-        <div class="importancia-accesibilidad">
+
+        <section id="importancia-de-la-accesibilidad-web">
             <h2>Importancia de la accesibilidad web</h2>
-            <p>
-                La accesibilidad web es crucial porque garantiza que todas las personas, incluidas aquellas con discapacidades, puedan acceder a la información y los servicios en línea. Esto no solo es un imperativo ético, sino que también amplía el alcance de un sitio web y mejora la experiencia del usuario en general.
-            </p>
-        </div>
-        <div class="beneficios-accesibilidad">
+        <p>
+            La accesibilidad web busca que cualquier persona pueda usar un sitio,
+            incluidas personas con discapacidades visuales, auditivas, motoras o cognitivas.
+            También ayuda a usuarios en móviles, con conexiones lentas o en situaciones temporales
+            (luz del sol, mano ocupada, etc.).
+        </p>
+        <h3>Razones éticas</h3>
+        <ul>
+            <li>Respeta la dignidad y los derechos de todas las personas.</li>
+            <li>Promueve la inclusión y la igualdad de oportunidades.</li>
+            <li>Evita la discriminación por barreras innecesarias.</li>
+        </ul>
+        <h3>Razones legales</h3>
+        <ul>
+            <li>Muchas leyes exigen sitios accesibles (especialmente en el sector público).</li>
+            <li>Reduce riesgos de quejas, sanciones y pérdida de confianza.</li>
+        </ul>
+        <h3>Beneficios técnicos y de calidad</h3>
+        <ul>
+            <li>Código más claro: uso correcto de títulos, listas y texto alternativo.</li>
+            <li>Mejor mantenimiento: estructura entendible para cualquier desarrollador.</li>
+            <li>Mejor experiencia de usuario: navegación fácil con teclado y mensajes claros.</li>
+            <li>Mejor SEO y rendimiento: contenido semántico y recursos mejor descritos.</li>
+        </ul>
+        <h3>Buenas prácticas básicas</h3>
+        <ol>
+            <li>Usa títulos en orden (<code>h1</code>, luego <code>h2</code>, etc.).</li>
+            <li>Escribe textos breves y claros (evita jerga y párrafos muy largos).</li>
+            <li>Asegura buen contraste entre texto y fondo.</li>
+            <li>Todos los elementos “clicables” deben poder usarse con teclado.</li>
+            <li>Toda imagen debe tener un <code>alt</code> adecuado (ver ejemplos abajo).</li>
+        </ol>
+        <p>
+            La accesibilidad es ética y legalmente necesaria, y además 
+            <strong>mejora la calidad del código y la usabilidad</strong> para todas las personas. 
+            Cuando se desarrolla un sitio accesible, el código se organiza mejor porque se usan etiquetas 
+            semánticas que indican claramente el propósito de cada parte de la página. Esto facilita el 
+            mantenimiento, la lectura y la comprensión del código por parte de otros desarrolladores. 
+            También se evitan errores comunes y se mejora la compatibilidad con diferentes navegadores 
+            y dispositivos.  
+        </p>
+        <p>
+            En cuanto a la usabilidad, un sitio accesible ofrece una experiencia más <strong>clara y cómoda</strong>. 
+            Las personas pueden navegar fácilmente con el teclado, los textos son legibles, los colores 
+            tienen buen contraste y las imágenes incluyen descripciones adecuadas. Todo esto no solo 
+            ayuda a quienes tienen alguna discapacidad, sino también a cualquier usuario que desee 
+            acceder al contenido desde su teléfono, una conexión lenta o un entorno con poca luz. 
+            En otras palabras, hacer un sitio accesible significa hacerlo mejor para todos.
+        </p>
+
+        <h3>Ejemplos de accesibilidad web en imágenes</h3>
+        <ul>
+            <li>
+                <strong>Imagen decorativa:</strong>
+                <p>Si la imagen es puramente decorativa y no aporta información relevante, el atributo <code>alt</code> debe estar vacío.</p>
+                <pre><code>&lt;img src="decorativa.jpg" alt=""&gt;</code></pre>
+                <img src="./images/decorativa.jpg" alt="">
+            </li>
+            <li>
+                <strong>Imagen informativa:</strong>
+                <p>Si la imagen contiene información importante, el atributo <code>alt</code> debe describir esa información de manera concisa.</p>
+                <pre><code>&lt;img src="grafico-ventas.jpg" alt="Gráfico de ventas mostrando un aumento del 20% en el último trimestre"&gt;</code></pre>
+                <img src="./images/grafico-ventas.webp" alt="Gráfico de ventas mostrando un aumento del 20% en el último trimestre">
+            </li>
+            <li>
+                <strong>Imagen compleja:</strong>
+                <p>Si la imagen es compleja (como un diagrama o una infografía), el atributo <code>alt</code> debe proporcionar una descripción breve, y se puede incluir una descripción más detallada en el texto circundante o mediante un enlace a una descripción completa.</p>
+                <pre><code>&lt;img src="diagrama-proceso.jpg" alt="Diagrama del proceso de selección de personal. Ver descripción detallada abajo."&gt;</code></pre>
+                <img src="./images/diagrama-proceso.webp" alt="Diagrama del proceso de selección de personal. Ver descripción detallada abajo.">
+                <p>"Proceso de selección de personal paso a paso desde que el postulado envía su CV hasta que se le notifica la decisión final."</p>
+            </li>
+        </section>
+        <div id="beneficios-accesibilidad">
             <h2>Beneficios de la accesibilidad web</h2>
             <p>
                 Implementar prácticas de accesibilidad web ofrece múltiples beneficios, como:
@@ -52,6 +139,148 @@
                 </li>
             </ul>
         </div>
+            <div id="principios-wcag">
+    <h2>Principios de las Pautas de Accesibilidad para el Contenido Web (WCAG)</h2>
+    <p>
+        Las WCAG se basan en cuatro principios fundamentales, conocidos por el acrónimo
+        <strong>POUR</strong> en inglés (<strong>P</strong>erceptible, <strong>O</strong>perable,
+        <strong>U</strong>nderstandable y <strong>R</strong>obust):
+    </p>
+
+    <ul>
+        <!-- p: perceptible -->
+        <li>
+        <h3>Perceptible</h3>
+        <p>
+            La información debe ser perceptible para las personas que utilizan solo uno de sus sentidos.
+            Esto incluye proporcionar texto alternativo para imágenes, subtítulos para videos y asegurar
+            un buen contraste de colores.
+        </p>
+        <img src="./images/perseptividad.jpg"
+            alt="Ilustración de accesibilidad: personas usando lector de pantalla y subtítulos"
+            width="600" height="300">
+
+        <h4>Ejemplo de código (imagen con texto alternativo):</h4>
+        <pre><code>&lt;img src="grafico-ventas.png" alt="Gráfico que muestra aumento de ventas en 2025"&gt;</code></pre>
+
+        <h4>Ejemplo de código (video con subtítulos):</h4>
+        <pre><code>&lt;video controls width="600"&gt;
+    &lt;source src="demo.mp4" type="video/mp4"&gt;
+    &lt;track kind="captions" src="demo-es.vtt" srclang="es" label="Español"&gt;
+    Tu navegador no soporta el video.
+    &lt;/video&gt;</code></pre>
+        </li>
+
+        <!-- o: operable -->
+        <li>
+        <h3>Operable</h3>
+        <p>
+            La interfaz y la navegación deben ser operables. Los elementos interactivos deben poder usarse
+            con teclado y el foco debe ser claro. Evita convertir elementos no interactivos en “botones”.
+        </p>
+        <img src="./images/operabilidad.jpg"
+            alt="Persona navegando un sitio con teclado y resaltado de foco"
+            width="600" height="400">
+
+        <h4>Ejemplo de código (enlace para saltar al contenido):</h4>
+        <pre><code>&lt;a href="#contenido"&gt;Saltar al contenido&lt;/a&gt;
+
+    &lt;!--navegación--&gt;
+
+    &lt;main id="contenido"&gt;
+    &lt;h2&gt;Título de la sección&lt;/h2&gt;
+    &lt;p&gt;Contenido principal...&lt;/p&gt;
+    &lt;/main&gt;</code></pre>
+
+        <h4>Ejemplo de código (usar controles nativos y foco):</h4>
+        <pre><code>&lt;button type="button"&gt;Abrir menú&lt;/button&gt;
+    &lt;a href="contacto.html"&gt;Ir a contacto&lt;/a&gt;</code></pre>
+
+        <p>
+            Usar elementos nativos como <code>&lt;button&gt;</code> y <code>&lt;a&gt;</code> garantiza
+            soporte de teclado y foco sin hacks.
+        </p>
+        </li>
+
+        <!-- U: Comprensible -->
+        <li>
+        <h3>Comprensible</h3>
+        <p>
+            La información y el funcionamiento de la interfaz deben ser fáciles de entender. Usa lenguaje claro,
+            instrucciones cercanas al control y mensajes de error útiles.
+        </p>
+        <img src="./images/comprensibilidad.jpg"
+            alt="Formulario simple con etiquetas claras e instrucciones"
+            width="600" height="400">
+
+        <h4>Ejemplo de código (formulario con etiquetas e instrucciones):</h4>
+        <pre><code>&lt;form action="/suscribir" method="post"&gt;
+    &lt;p&gt;Ingresa tu correo para recibir novedades.&lt;/p&gt;
+
+    &lt;label for="email"&gt;Correo electrónico&lt;/label&gt;
+    &lt;input id="email" name="email" type="email" required&gt;
+
+    &lt;p id="ayuda"&gt;Usa un correo válido (ej.: nombre@dominio.com).&lt;/p&gt;
+
+    &lt;button type="submit"&gt;Suscribirme&lt;/button&gt;
+    &lt;/form&gt;</code></pre>
+
+        <p>
+            El par <code>&lt;label for&gt;</code> y <code>id</code> relaciona claramente la etiqueta con el campo.
+            El texto de ayuda cercano mejora la comprensión.
+        </p>
+        </li>
+
+        <!-- R: Robusto -->
+        <li>
+        <h3>Robusto</h3>
+        <p>
+            El contenido debe funcionar con diferentes navegadores, dispositivos y tecnologías de asistencia,
+            hoy y en el futuro. La clave es usar HTML estándar y una jerarquía correcta.
+        </p>
+        <img src="./images/robustez.webp"
+            alt="Compatibilidad entre navegadores y tecnologías de asistencia"
+            width="500" height="400">
+
+        <h4>Ejemplo de código (estructura semántica simple y estable):</h4>
+        <pre><code>&lt;header&gt;
+    &lt;h1&gt;Mi sitio accesible&lt;/h1&gt;
+    &lt;/header&gt;
+
+    &lt;nav&gt;
+    &lt;a href="#articulo-1"&gt;Artículo 1&lt;/a&gt;
+    &lt;a href="#articulo-2"&gt;Artículo 2&lt;/a&gt;
+    &lt;/nav&gt;
+
+    &lt;main&gt;
+    &lt;article id="articulo-1"&gt;
+        &lt;h2&gt;Título de sección&lt;/h2&gt;
+        &lt;p&gt;Contenido bien estructurado.&lt;/p&gt;
+    &lt;/article&gt;
+    &lt;/main&gt;
+
+    &lt;footer&gt;
+    &lt;p&gt;© 2025&lt;/p&gt;
+    &lt;/footer&gt;</code></pre>
+
+        <p>
+            Mantener el orden de encabezados (<code>h1</code> → <code>h2</code>) y usar elementos estándar
+            mejora la compatibilidad con lectores de pantalla y agentes de usuario.
+        </p>
+        </li>
+    </ul>
     </div>
+
+    </div>
+    <footer>
+        <footer>
+            <h2 id="referencias">Referencias</h2>
+            <ul>
+                <li><a href="https://www.w3.org/WAI/fundamentals/accessibility-intro/es">Introducción a la Accesibilidad Web</a></li>
+                <li><a href="https://userway.org/es/blog/accesibilidad-web/">La Importancia de la Accesibilidad Web en la Era Digital</a></li>
+                <li><a href="https://www.w3.org/WAI/policies/">Leyes y políticas de accesibilidad web</a></li>
+                <li><a href="https://www.wcag.com/resource/what-is-wcag/">WCAG 101: Comprensión de las Pautas de Accesibilidad al Contenido Web</a></li>
+            </ul>
+    </footer>
 </body>
 </html>
