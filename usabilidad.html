@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Usabilidad y DCU</title>
+    <link rel="stylesheet" href="./css/usabilidad.css">
 </head>
 <body>
     <div class="titulo">
+        <img src="./images/usabilidad.jpeg" alt="Usabilidad web" loading="lazy">
         <h1>Usabilidad web y diseño centrado en el usuario (DCU)</h1>
     </div>
     <nav aria-label="Índice de contenidos">
@@ -22,14 +24,14 @@
 
     <div class="contenido">
         <div id="que-es-usabilidad">
-        <img src="./images/usability.webp" alt="usabilidad web" width="500px" height="300px">
+        <h2>¿Qué es usabilidad web?</h2>
         <p>
         La <strong>usabilidad web</strong> se refiere a lo fácil que resulta para los usuarios
         navegar por un sitio y realizar las acciones que necesitan sin complicaciones ni frustraciones.
         Este concepto incluye una <strong>navegación sencilla</strong>, un <strong>diseño centrado en el usuario</strong>,
         una <strong>estructura visual clara</strong> y una buena <strong>accesibilidad</strong>.
         </p>
-
+        <img src="./images/usability.webp" alt="usabilidad web" width="500px" height="300px">
         <p>
         En otras palabras, una página con buena usabilidad permite que cualquier persona,
         sin importar su nivel de experiencia o conocimiento técnico, pueda utilizarla sin problemas
@@ -88,135 +90,153 @@
             <li><strong>Visibilidad del estado del sistema</strong></li>
             <p style="text-decoration: underline;">El sistema debe mantener informado al usuario sobre lo que esta ocurriendo en la web a cada momento.</p>
             <p>Esto se puede lograr mediante mensajes claros, indicadores de carga y actualizaciones en tiempo real. Así se evita dejar a los usuarios pensando: ¿Qué esta pasando ahora?</p>
-            <img src="./images/check-icon.png" alt="check-icon" width="20px" height="20px" style="vertical-align: middle;">
-            <span>Ejemplo de una buena práctica de la visibilidad del estado del sistema:</span>
-            <br>
+            <div class="ejemplo-icon-text">
+                <img src="./images/check-icon.png" alt="check-icon">
+                <span>Ejemplo de una buena práctica de la visibilidad del estado del sistema:</span>
+            </div>
             <img src="./images/visibilidad-estado-sist-bien.png" alt="Buena Practica Visibilidad del Estado del Sistema" width="500px" height="300px">
-            <br>
-            <img src="./images/x.png" alt="mal" width="20px" height="20px" style="vertical-align: middle;">
-            <span>Ejemplo de una mala práctica de la visibilidad del estado del sistema:</span>
-            <br>
+            <div class="ejemplo-icon-text">
+                <img src="./images/x.png" alt="mal">
+                <span>Ejemplo de una mala práctica de la visibilidad del estado del sistema:</span>
+            </div>
             <img src="./images/visibilidad-estado-sist-mal.jpg" alt="mala Practica Visibilidad del Estado del Sistema" width="500px" height="300px">
+
             <li><strong>Consistencia entre el sistema y el mundo real</strong></li>
             <p style="text-decoration: underline;">El sistema tiene que hablar el idioma del usuario. Se debe utilizar palabras, frases y conceptos que le sean familiares.</p>
             <p>Esto se puede lograr explicando un error que ocurra en un lenguaje que el usuario entienda en vez de solo mostrar el código de error.</p>
-            <img src="./images/check-icon.png" alt="check-icon" width="20px" height="20px" style="vertical-align: middle;">
-            <span>Ejemplo de una buena práctica de la consistencia entre el sistema y el mundo real: Lograr que el usuario entienda el error</span>
-            <br>
+            <div class="ejemplo-icon-text">
+                <img src="./images/check-icon.png" alt="check-icon">
+                <span>Ejemplo de una buena práctica de la consistencia entre el sistema y el mundo real: Lograr que el usuario entienda el error</span>
+            </div>
             <img src="./images/consistencia-usuario-bien.png" alt="Buena Practica Consistencia entre el Sistema y el Mundo Real" width="500px" height="300px">
-            <br>
-            <img src="./images/x.png" alt="mal" width="20px" height="20px" style="vertical-align: middle;">
-            <span>Ejemplo de una mala práctica de la consistencia entre el sistema y el mundo real: No explicar correctamente los errores que se presenten en el sistema.</span>
-            <br>
+            <div class="ejemplo-icon-text">
+                <img src="./images/x.png" alt="mal">
+                <span>Ejemplo de una mala práctica de la consistencia entre el sistema y el mundo real: No explicar correctamente los errores que se presenten en el sistema.</span>
+            </div>
             <img src="./images/consistencia-usuario-mal.jpg" alt="mala Practica Consistencia entre el Sistema y el Mundo Real" width="500px" height="300px">
+
             <li><strong>Control del usuario y libertad</strong></li>
             <p style="text-decoration: underline;">Los usuarios suelen realizar acciones por error. Siempre debe existir una «salida de emergencia» para revertir una acción no deseada.</p>
             <p>Esto se puede lograr mediante un botón de "deshacer" o "rehacer" que permita a los usuarios revertir cambios fácilmente.</p>
-            <img src="./images/check-icon.png" alt="check-icon" width="20px" height="20px" style="vertical-align: middle;">
-            <span>Ejemplo de una buena práctica del control del usuario y libertad:</span>
-            <br>
+            <div class="ejemplo-icon-text">
+                <img src="./images/check-icon.png" alt="check-icon">
+                <span>Ejemplo de una buena práctica del control del usuario y libertad:</span>
+            </div>
             <img src="./images/control-usuario-bien.png" alt="Buena Practica Control del Usuario y Libertad" width="500px" height="300px">
-            <br>
-            <img src="./images/x.png" alt="mal" width="20px" height="20px" style="vertical-align: middle;">
-            <span>Ejemplo de una mala práctica del control del usuario y libertad:</span>
-            <br>
+            <div class="ejemplo-icon-text">
+                <img src="./images/x.png" alt="mal">
+                <span>Ejemplo de una mala práctica del control del usuario y libertad:</span>
+            </div>
             <img src="./images/control-usuario-mal.jpeg" alt="mala Practica Control del Usuario y Libertad" width="500px" height="500px">
+
             <li><strong>Consistencia y estándares</strong></li>
             <p class="justificacion">
                 Para garantizar <strong>Consistencia y Estándares</strong>, unifiqué la jerarquía de títulos (un solo <code>h1</code> y uso consistente de <code>h2</code>/<code>h3</code>), normalicé la redacción de los rótulos y seguí convenciones comunes (el logo y los enlaces funcionan de forma predecible). Además, consolidé estilos en clases reutilizables y mantuve terminología a lo largo de la página, reduciendo la carga cognitiva y facilitando el reconocimiento de patrones por parte del usuario.
             </p>
             <p style="text-decoration: underline;">Los usuarios no deben verse obligados si diferentes palabras, situaciones o acciones significan lo mismo. Se debe seguir las convenciones establecidas en la plataforma y la industria.</p>
             <p>Esto se puede lograr mediante el uso de terminología y símbolos consistentes en toda la interfaz de usuario.</p>
-            <img src="./images/check-icon.png" alt="check-icon" width="20px" height="20px" style="vertical-align: middle;">
-            <span>Ejemplo de una buena práctica de la consistencia y estándares:</span>
-            <br>
+            <div class="ejemplo-icon-text">
+                <img src="./images/check-icon.png" alt="check-icon">
+                <span>Ejemplo de una buena práctica de la consistencia y estándares:</span>
+            </div>
             <img src="./images/consistencia-estandares-bien.png" alt="Buena Practica Consistencia y Estándares" width="700px" height="300px">
-            <br>
-            <img src="./images/x.png" alt="mal" width="20px" height="20px" style="vertical-align: middle;">
-            <span>Ejemplo de una mala práctica de la consistencia y estándares:</span>
-            <br>
+            <div class="ejemplo-icon-text">
+                <img src="./images/x.png" alt="mal">
+                <span>Ejemplo de una mala práctica de la consistencia y estándares:</span>
+            </div>
             <img src="./images/consistencia-estandares-mal.png" alt="mala Practica Consistencia y Estándares" width="700px" height="300px">
+            
             <li><strong>Prevención de errores</strong></li>
             <p style="text-decoration: underline;">Los buenos mensajes de error son importantes. Pero mejor aún, es crear un diseño que evite que los errores ocurran.</p>
             <p>Esto se puede lograr mediante la validación de datos en tiempo real, la desactivación de botones hasta que se completen los campos requeridos y la implementación de sugerencias contextuales.</p>
-            <img src="./images/check-icon.png" alt="check-icon" width="20px" height="20px" style="vertical-align: middle;">
-            <span>Ejemplo de una buena práctica de la visibilidad de la prevención de errores:</span>
-            <br>
+            <div class="ejemplo-icon-text">
+                <img src="./images/check-icon.png" alt="check-icon">
+                <span>Ejemplo de una buena práctica de la visibilidad de la prevención de errores:</span>
+            </div>
             <img src="./images/prevencion-errores-bien.png" alt="Buena Practica Visibilidad de la Prevención de Errores" width="300px" height="300px">
-            <br>
-            <img src="./images/x.png" alt="mal" width="20px" height="20px" style="vertical-align: middle;">
-            <span>Ejemplo de una mala práctica de la visibilidad de la prevención de errores:</span>
-            <br>
+            <div class="ejemplo-icon-text">
+                <img src="./images/x.png" alt="mal">
+                <span>Ejemplo de una mala práctica de la visibilidad de la prevención de errores:</span>
+            </div>
             <img src="./images/prevencion-errores-mal.png" alt="mala Practica Visibilidad de la Prevención de Errores" width="300px" height="300px">
+            
             <li><strong>Reconocimiento en lugar de recuerdo</strong></li>
             <p style="text-decoration: underline;">Minimizar el uso de memoria del usuario haciendo visibles los elementos, las acciones y las opciones.</p>
             <p>Esto se puede lograr mediante menús desplegables, etiquetas claras y una navegación intuitiva.</p>
-            <img src="./images/check-icon.png" alt="check-icon" width="20px" height="20px" style="vertical-align: middle;">
-            <span>Ejemplo de una buena práctica del reconocimiento en lugar de recuerdo:</span>
-            <br>
+            <div class="ejemplo-icon-text">
+                <img src="./images/check-icon.png" alt="check-icon">
+                <span>Ejemplo de una buena práctica del reconocimiento en lugar de recuerdo:</span>
+            </div>
             <img src="./images/reconocimieno-bien.jpg" alt="Buena Practica Visibilidad del Reconocimiento en lugar de Recuerdo" width="500px" height="300px">
-            <br>
-            <img src="./images/x.png" alt="mal" width="20px" height="20px" style="vertical-align: middle;">
-            <span>Ejemplo de una mala práctica del reconocimiento en lugar de recuerdo:</span>
-            <br>
+            <div class="ejemplo-icon-text">
+                <img src="./images/x.png" alt="mal">
+                <span>Ejemplo de una mala práctica del reconocimiento en lugar de recuerdo:</span>
+            </div>
             <img src="./images/reconocimiento-mal.jpg" alt="mala Practica Visibilidad del Reconocimiento en lugar de Recuerdo" width="500px" height="300px">
+            
             <li><strong>Flexibilidad y eficiencia de uso</strong></li>
             <p class="justificacion">
             Para mejorar la <strong>Flexibilidad y Eficiencia de Uso</strong>, incorporé un índice con anclas que permite saltar a cada sección en un clic.</p>
             <p style="text-decoration: underline;">Los usuarios más experimentados, deben poseer atajos y aceleradores para poder realizar sus operaciones mas habituales. De esta forma, tiene alternativas para personalizar sus acciones frecuentes.</p>
             <p>Esto se puede lograr mediante la implementación de atajos de teclado, menús contextuales y opciones de personalización en la interfaz.</p>
-            <img src="./images/check-icon.png" alt="check-icon" width="20px" height="20px" style="vertical-align: middle;">
-            <span>Ejemplo de una buena práctica de la flexibilidad y eficiencia de uso:</span>
-            <br>
+            <div class="ejemplo-icon-text">
+                <img src="./images/check-icon.png" alt="check-icon">
+                <span>Ejemplo de una buena práctica de la flexibilidad y eficiencia de uso:</span>
+            </div>
             <img src="./images/atajos-teclado.jpg" alt="Buena Practica Flexibilidad y Eficiencia de Uso" width="500px" height="300px">
-            <br>
-            <img src="./images/x.png" alt="mal" width="20px" height="20px" style="vertical-align: middle;">
-            <span>Ejemplo de una mala práctica de la flexibilidad y eficiencia de uso:</span>
-            <br>
+            <div class="ejemplo-icon-text">
+                <img src="./images/x.png" alt="mal">
+                <span>Ejemplo de una mala práctica de la flexibilidad y eficiencia de uso:</span>
+            </div>
             <img src="./images/atajos-teclado-lock.webp" alt="mala Practica Flexibilidad y Eficiencia de Uso" width="500px" height="300px">
+            
             <li><strong>Estética y diseño minimalista</strong></li>
             <p class="justificacion">
-            Apliqué <strong>Estética y Diseño Minimalista</strong> priorizando el contenido relevante, eliminando elementos decorativos redundantes y definiendo una paleta cromática breve junto con una jerarquía tipográfica clara. Organicé la información en bloques breves y listas, añadí espacio en blanco y evité subrayados decorativos, mejorando la legibilidad y el foco en lo esencial para disminuir la carga durante la lectura.
+            Apliqué <strong>Estética y Diseño Minimalista</strong> priorizando el contenido relevante, eliminando elementos decorativos redundantes y definiendo una paleta cromática breve junto con una jerarquía tipográfica clara. Organizé la información en bloques breves y listas, añadí espacio en blanco y evité subrayados decorativos, mejorando la legibilidad y el foco en lo esencial para disminuir la carga durante la lectura.
             </p>
             <p style="text-decoration: underline;">Las interfaces no deben contener información irrelevante o que rara vez se necesite. Se debe conocer que tipo de contenido necesita el usuario.</p>
             <p>Esto se puede lograr mediante la eliminación de elementos innecesarios, el uso de un diseño limpio y la organización lógica de la información.</p>
-            <img src="./images/check-icon.png" alt="check-icon" width="20px" height="20px" style="vertical-align: middle;">
-            <span>Ejemplo de una buena práctica de la visibilidad del estado del sistema:</span>
-            <br>
+            <div class="ejemplo-icon-text">
+                <img src="./images/check-icon.png" alt="check-icon">
+                <span>Ejemplo de una buena práctica de la visibilidad del estado del sistema:</span>
+            </div>
             <img src="./images/minimalist.jpeg" alt="Buena Practica estetica y diseño minimalista" width="500px" height="300px">
-            <br>
-            <img src="./images/x.png" alt="mal" width="20px" height="20px" style="vertical-align: middle;">
-            <span>Ejemplo de una mala práctica de la visibilidad del estado del sistema:</span>
-            <br>
+            <div class="ejemplo-icon-text">
+                <img src="./images/x.png" alt="mal">
+                <span>Ejemplo de una mala práctica de la visibilidad del estado del sistema:</span>
+            </div>
             <img src="./images/no-minimalist.jpg" alt="mala Practica estetica y diseño minimalista" width="500px" height="300px">
+            
             <li><strong>Ayuda a los usuarios a reconocer, diagnosticar y recuperarse de errores</strong></li>
             <p style="text-decoration: underline;">Los mensajes de error deben expresarse en un lenguaje entendible, sin códigos de error. Se debe describir con precisión el problema y sugerir constructivamente una solución.</p>
             <p>Esto se puede lograr mediante la implementación de mensajes de error claros y concisos, así como proporcionando sugerencias útiles para la resolución de problemas.</p>
-            <img src="./images/check-icon.png" alt="check-icon" width="20px" height="20px" style="vertical-align: middle;">
-            <span>Ejemplo de una buena práctica de ayuda a los usuarios a reconocer, diagnosticar y recuperarse de errores:</span>
-            <br>
+            <div class="ejemplo-icon-text">
+                <img src="./images/check-icon.png" alt="check-icon">
+                <span>Ejemplo de una buena práctica de ayuda a los usuarios a reconocer, diagnosticar y recuperarse de errores:</span>
+            </div>
             <img src="./images/error-message.png" alt="Buena Practica ayuda a los usuarios a reconocer, diagnosticar y recuperarse de errores" width="500px" height="300px">
-            <br>
-            <img src="./images/x.png" alt="mal" width="20px" height="20px" style="vertical-align: middle;">
-            <span>Ejemplo de una mala práctica de ayuda a los usuarios a reconocer, diagnosticar y recuperarse de errores:</span>
-            <br>
+            <div class="ejemplo-icon-text">
+                <img src="./images/x.png" alt="mal">
+                <span>Ejemplo de una mala práctica de ayuda a los usuarios a reconocer, diagnosticar y recuperarse de errores:</span>
+            </div>
             <img src="./images/error-404.jpeg" alt="mala Practica ayuda a los usuarios a reconocer, diagnosticar y recuperarse de errores" width="400px" height="300px">
+            
             <li><strong>Documentación de ayuda</strong></li>
             <p style="text-decoration: underline;">Lo ideal es que un sistema no necesite ninguna explicación adicional. Pero en algunos casos, se debe proporcionar una documentación para ayudar a los usuarios a entender cómo completar sus tareas.</p>
             <p>Esto se puede lograr mediante la creación de guías de usuario, tutoriales y preguntas frecuentes (FAQ) que aborden las necesidades y problemas comunes de los usuarios.</p>
-            <img src="./images/check-icon.png" alt="check-icon" width="20px" height="20px" style="vertical-align: middle;">
-            <span>Ejemplo de una buena práctica de la documentación de ayuda:</span>
-            <br>
+            <div class="ejemplo-icon-text">
+                <img src="./images/check-icon.png" alt="check-icon">
+                <span>Ejemplo de una buena práctica de la documentación de ayuda:</span>
+            </div>
             <img src="./images/documentacion-ayuda.png" alt="Buena Practica documentación de ayuda" width="500px" height="300px">
-            <br>
-            <img src="./images/x.png" alt="mal" width="20px" height="20px" style="vertical-align: middle;">
-            <span>Ejemplo de una mala práctica de la documentación de ayuda:</span>
-            <br>
+            <div class="ejemplo-icon-text">
+                <img src="./images/x.png" alt="mal">
+                <span>Ejemplo de una mala práctica de la documentación de ayuda:</span>
+            </div>
             <img src="./images/documentacion-mal-ayuda.jpg" alt="mala Practica documentación de ayuda" width="700px" height="300px">
         </ol>
     </div>
-    </div>
-    </div>
+    
     <div id="dcu">
         <h2 class="title">Diseño Centrado en el Usuario</h2>
         <div class="que-es-dcu">
@@ -314,22 +334,25 @@
             </p>
             <img src="./images/power-platform.webp" alt="Power Platform" width="500px" height="300px">
         </div>
-    </div>
-    </div>
-    <footer id="referencias">
-    <h3>Referencias</h3>
+        </div>
+        </div>
+        <footer id="referencias">
+        <h3>Referencias</h3>
+
         <h4>Usabilidad Web</h4>
-    <ul>
-        <li><a href="https://www.enae.es/blog/la-usabilidad-web-clave-para-el-exito-de-tu-negocio-en-la-era-digital">La usabilidad web: clave para el éxito de tu negocio en la era digital</a></li>
-        <li><a href="https://dossetenta.com/mejorando-la-experiencia-del-usuario-la-importancia-de-la-usabilidad-web/">Mejorando la Experiencia del Usuario: La Importancia de la Usabilidad Web</a></li>
-        <li><a href="https://dossetenta.com/mejorando-la-experiencia-del-usuario-la-importancia-de-la-usabilidad-web/">10 principios de usabilidad de Jakob Nielsen (con ejemplos)</a></li>
-    </ul>
-    <h4>DCU</h4>
-    <ul>
-        <li><a href="https://www.iebschool.com/hub/diseno-centrado-en-el-usuario-analitica-usabilidad/">¿Qué es el diseño centrado en el usuario?</a></li>
-        <li><a href="https://www.usertesting.com/blog/user-centered-design">¿Qué es el diseño centrado en el usuario (DCU)?</a></li>
-        <li><a href="https://diegoamorin.com/10-principios-usabilidad/">Microsoft Ignite - Recomendaciones para una estrategia de diseño centrada en el usuario</a></li>
-    </ul>
-</footer>
-</body>
-</html>
+        <ul>
+            <li><a href="https://www.enae.es/blog/la-usabilidad-web-clave-para-el-exito-de-tu-negocio-en-la-era-digital">La usabilidad web: clave para el éxito de tu negocio en la era digital</a></li>
+            <li><a href="https://dossetenta.com/mejorando-la-experiencia-del-usuario-la-importancia-de-la-usabilidad-web/">Mejorando la Experiencia del Usuario: La Importancia de la Usabilidad Web</a></li>
+            <li><a href="https://diegoamorin.com/10-principios-usabilidad/">10 principios de usabilidad de Jakob Nielsen (con ejemplos)</a></li>
+        </ul>
+
+        <h4>Diseño Centrado en el Usuario (DCU)</h4>
+        <ul>
+            <li><a href="https://www.iebschool.com/hub/diseno-centrado-en-el-usuario-analitica-usabilidad/">¿Qué es el diseño centrado en el usuario?</a></li>
+            <li><a href="https://www.usertesting.com/blog/user-centered-design">¿Qué es el diseño centrado en el usuario (DCU)?</a></li>
+            <li><a href="https://learn.microsoft.com/es-es/power-platform/well-architected/experience-optimization/user-centered-design">Microsoft - Recomendaciones para una estrategia de diseño centrada en el usuario</a></li>
+        </ul>
+        </footer>
+
+    </body>
+    </html>

@@ -1,0 +1,238 @@
+/* voy a hacerlo en 2 columnas, menú izq + contenido der */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #222;
+    /* Estructura de dos columnas */
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 28px;
+    min-height: 100vh;
+    background: #f8f9fa; /* Fondo general más claro */
+}
+
+.titulo {
+    grid-column: 1 / -1; /* Ocupa todo el ancho */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 0;
+    background: linear-gradient(90deg, #0077b6 0%, #57c785 70%, #00b4d8 100%);
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+.titulo img {
+    width: 25%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.titulo h1 {
+    font-size: 2rem;
+    margin: 10px 0 0;
+}
+
+/* menu lateral*/
+nav {
+    position: relative; 
+    top: 20px;
+    align-self: start;
+    background: #c2e1e8; 
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 18px;
+    margin: 20px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+}
+
+nav h2 {
+    color: #0a5f86;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li + li {
+    margin-top: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0a5f86;
+    background: #e0f7fa;
+    display: block;
+    padding: 10px 14px;
+    border-radius: 999px;
+    transition: all 0.25s ease;
+}
+
+nav a:hover,
+nav a:focus {
+    background: #0a5f86;
+    color: #fff;
+    outline: none;
+}
+
+nav a[aria-current="page"] {
+    background: #0a5f86;
+    color: #fff;
+}
+
+/*contenido principal*/
+.contenido {
+    grid-column: 2; /* Ocupa la segunda columna */
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 26px;
+    margin: 20px 20px 40px 0;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+/* Títulos de sección */
+.contenido h2,
+#dcu .title { 
+    color: #0a5f86;
+    border-bottom: 2px solid #0a5f86;
+    padding-bottom: 4px;
+    margin-top: 30px;
+}
+.contenido h2:first-of-type {
+    margin-top: 0; 
+}
+
+.contenido h3 {
+    color: #0077b6;
+    margin-top: 20px;
+}
+
+/* Imágenes dentro del contenido */
+.contenido img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 14px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* lista de beneficios */
+.importancia-usabilidad-beneficios ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.importancia-usabilidad-beneficios li {
+    flex: 1 1 200px; 
+    max-width: 250px;
+    border: 1px solid #eee;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.importancia-usabilidad-beneficios li img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    margin: 10px auto;
+    box-shadow: none; 
+}
+
+/* Corregir alineación de íconos de check/x con su texto */
+.principios-nielsen ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+.ejemplo-icon-text {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.ejemplo-icon-text img {
+    width: 20px;
+    height: 20px;
+    margin: 0 8px 0 0;
+    box-shadow: none;
+}
+
+/*footer*/
+footer {
+    /* ESTA REGLA HACE QUE EL FOOTER OCUPE TODAS LAS COLUMNAS */
+    grid-column: 1 / -1;
+    background: #eaf6fb;
+    padding: 22px;
+    border-top: 2px solid #0077b6;
+}
+
+footer h3, footer h4 {
+    color: #0a5f86; 
+    margin-bottom: 8px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 6px 0 14px;
+}
+
+footer a {
+    color: #0077b6; 
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/*responsive*/
+@media (max-width: 900px) {
+    body {
+        display: block; 
+    }
+
+    nav {
+        position: static;
+        margin: 16px auto;
+        width: 90%;
+    }
+
+    .contenido {
+        width: 90%;
+        margin: 0 auto 28px;
+    }
+
+    .titulo {
+        border-radius: 0;
+    }
+
+    .principios-nielsen .images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .principios-nielsen .images img:last-child {
+        width: 90%;
+    }
+}

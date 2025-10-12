@@ -1,0 +1,179 @@
+    /* voy a hacerlo en 2 columnas, menú izq + contenido der */
+    html, body {
+    height: 100%;
+    }
+
+    body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #222;
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    grid-template-rows: auto 1fr auto;   /* header - contenido - footer */
+    gap: 28px;
+    min-height: 100vh;                   /* footer se queda al fondo */
+    background: #f8f9fa;
+    }
+    /* ===== Encabezado tipo banner ===== */
+    .titulo {
+    grid-column: 1 / -1;       /* ocupa todo el ancho */
+    grid-row: 1;               /* se coloca en la primera fila del grid */
+    display: flex;
+    flex-direction: column;    /* imagen arriba, texto abajo */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 16px 20px;
+    min-height: 160px;
+    background: linear-gradient(90deg, #0077b6 0%, #57c785 70%, #00b4d8 100%);
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,.15);
+    z-index: 1;
+    }
+
+    .titulo img {
+    width: 180px;
+    max-width: 90vw;           /* responsivo */
+    height: auto;
+    display: block;
+    margin: 8px 0;
+    }
+
+    .titulo h1 {
+    margin: 8px 0 12px;
+    font-size: 2rem;
+    line-height: 1.2;
+    color: #fff;               
+    }
+
+
+    /*menú lateral*/
+    nav {
+    position: relative;
+    top: 20px;
+    background: #e0f7fa; 
+    padding: 24px 22px;
+    border-radius: 12px;
+    margin-left: 16px;
+    height: fit-content;
+    border: 1px solid #cdeef1;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+    }
+
+    nav h2 {
+    margin: 0 0 12px 0;
+    font-size: 1.1rem;
+    color: #0a5f86;                       /* azul oscuro del menú */
+    }
+
+    nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+
+    nav li + li { margin-top: 10px; }
+
+    nav a {
+    display: block;
+    padding: 10px 14px;
+    text-decoration: none;
+    color: #0a5f86;/* texto del link */
+    background: #e0f7fa;                  
+    border-radius: 999px;
+    transition: all .25s ease;
+    }
+
+    nav a:hover,
+    nav a:focus {
+    background: #0a5f86;                  
+    color: #fff;
+    outline: none;
+    }
+
+    nav a[aria-current="page"] {
+    background: #0a5f86;
+    color: #fff;
+    }
+
+    /*contenido*/
+    .contenido {
+    padding: 30px;
+    background: #fff;
+    border-radius: 12px;
+    margin-right: 16px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+    }
+
+    .contenido h2 {
+    color: #0a5f86;
+    border-bottom: 2px solid #0a5f86;
+    padding-bottom: 4px;
+    margin-top: 10px;
+    }
+
+    .contenido h3 {
+    color: #0077b6;/* sub-encabezados */
+    }
+
+    .contenido img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 14px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+
+    /* bloques de código/ejemplos */
+    .contenido pre, .contenido code, .contenido pre code {
+    background: #0b172a;                  /* fondo oscuro */
+    color: #e7eef8;                       /* texto claro */
+    padding: 12px;
+    border-radius: 8px;
+    overflow: auto;
+    }
+
+    /* footer ancho completo (pegado al fondo por grid) */
+    footer {
+    grid-column: 1 / -1;
+    background: #eaf6fb;
+    padding: 22px;
+    border-top: 2px solid #0077b6;
+    }
+
+    footer h3, footer h4 {
+    color: #0a5f86; 
+    margin-bottom: 8px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 6px 0 14px;
+}
+
+footer a {
+    color: #0077b6; 
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+    /* responsive */
+    @media (max-width: 900px) {
+    body {
+        display: block;
+        min-height: 100vh;
+    }
+    .titulo {
+        margin: 0 12px;
+    }
+    nav, .contenido {
+        width: 90%;
+        margin: 16px auto;
+    }
+    }
